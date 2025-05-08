@@ -1,0 +1,7 @@
+# pip install streamlit openai langchain mysql-connector-python sqlalchemy
+
+streamlit 
+openai 
+langchain 
+mysql-connector-python 
+sqlalchemy
