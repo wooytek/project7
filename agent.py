@@ -5,8 +5,12 @@ from db_connection import get_database
 import openai
 import os
 
+def get_api_key():
+  with open('openai_key.txt', 'r') as f:
+    return f.read().strip()
+
 # Set OpenAI key
-os.environ["OPENAI_API_KEY"] = ""  # Replace with your actual key
+os.environ["OPENAI_API_KEY"] = get_api_key()
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # LangChain SQL Agent setup
